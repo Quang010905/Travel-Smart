@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Smart</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!--bootstrap-->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!--font awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  
+
+  
+  <!--nav bar-->
+  <nav class="navbar navbar-expand-lg" id="navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html" id="logo"><span>Travel</span>Smart</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span><i class="fa-solid fa-bars"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./bookdetails.html">Book</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#packages">Packages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+
+        </ul>
+        
+        <form class="d-flex">
+          <input class="form-control me-2" type="text" placeholder="Search">
+          <button class="btn btn-primary" type="button">Search</button>
+        </form>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-user"></i>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="userDropdown">
+              <li><a class="dropdown-item" href="#">Login</a></li>  
+          </ul>
+      </div>
+      </div>
+    </div>
+  </nav>
+  <!--nav bar end-->
+  <!--home section-->
+  <div class="home">
+    <video autoplay loop muted play-inline class="background-clip">
+    <source src="./images/vid2.mp4" type="video/mp4">  
+    </video>
+    <div class="content">
+      <h5>Welcome To World</h5>
+      <h1>Visit <span class="changecontent"></span></h1>
+      <p>"Your Adventure Begins Here"</p>
+      <a href="#book">Book Place</a>
+    </div>
+  </div>
+  <!--end home section-->
+
+
+
+
+
+
+  <!--package-->
+  <section class="packages" id="packages">
+    <div class="container">
+      <div class="main-txt">
+        <h1>New and Most Popular Tours</h1>
+      </div>
+      <div class="row" style="margin-top: 30px;">
+
+        <div class="col-md-4 py-3 py-md-0">
+
+          <div class="card">
+            <img src="images/uk.jpg" alt="">
+            <div class="card-body">
+              <h3>United Kingdom</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, molestias!</p>
+              <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <h6>Price <strong>$1000</strong></h6>
+              <a href="#book">See Details</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+
+          <div class="card">
+            <img src="images/france.jpg" alt="">
+            <div class="card-body">
+              <h3>France</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, molestias!</p>
+              <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <h6>Price <strong>$1000</strong></h6>
+              <a href="#book">See Details</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+
+          <div class="card">
+            <img src="images/vietnam.jpg" alt="">
+            <div class="card-body">
+              <h3>Viet Nam</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, molestias!</p>
+              <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <h6>Price <strong>$1000</strong></h6>
+              <a href="#book">See Details</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="row" style="margin-top: 30px;">
+
+        <div class="col-md-4 py-3 py-md-0">
+
+          <div class="card">
+            <img src="images/italy.jpg" alt="">
+            <div class="card-body">
+              <h3>Italy</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, molestias!</p>
+              <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <h6>Price <strong>$1000</strong></h6>
+              <a href="#book">See Details</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+
+          <div class="card">
+            <img src="images/china.jpg" alt="">
+            <div class="card-body">
+              <h3>China</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, molestias!</p>
+              <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <h6>Price <strong>$1000</strong></h6>
+              <a href="#book">See Details</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+
+          <div class="card">
+            <img src="images/india.jpg" alt="">
+            <div class="card-body">
+              <h3>India</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, molestias!</p>
+              <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <h6>Price <strong>$1000</strong></h6>
+              <a href="#book">See Details</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+  </section>
+
+  <!--end package-->
+
+  <!-- Service section -->
+
+  <section class="services" id="services">
+    <div class="container">
+
+      <div class="main-txt">
+        <h1><span>S</span>ervices</h1>
+      </div>
+
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-md-4 py-3 py-md-0">
+
+          <div class="card">
+            <i class="fa-solid fa-globe"></i>
+            <div class="card-body">
+              <h3>Memorable Experiences</h3>
+              <p>Browse and book tours and activities so incredible.</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+
+          <div class="card">
+            <i class="fa-solid fa-plane"></i>
+            <div class="card-body">
+              <h3>Customer Satisfaction</h3>
+              <p>Browse and book tours and activities so incredible.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-md-4 py-3 py-md-0">
+
+          <div class="card">
+            <i class="fa-solid fa-person-hiking"></i>
+            <div class="card-body">
+              <h3>Extended Customization</h3>
+              <p>Browse and book tours and activities so incredible.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Service section end-->
+
+
+  <!-- Gallery -->
+
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="main-txt">
+        <h1><span>G</span>allery</h1>
+      </div>
+
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/gallery1.png" alt="" height="230px">
+          </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/gallery2.jpeg" alt="" height="230px">
+          </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/gallery3.png" alt="" height="230px">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/gallery4.png" alt="" height="230px">
+          </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/gallery5.jpg" alt="" height="230px">
+          </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/gallery6.jpg" alt="" height="230px">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Gallery end-->
+
+
+
+  <!-- about -->
+
+  <section class="about" id="about">
+    <div class="container">
+      <div class="main-txt">
+        <h1>About<span> Us</span></h1>
+      </div>
+
+      <div class="row" style="margin-top: 50px;">
+
+        <div class="col-md-6 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/logo.png" alt="">
+          </div>
+        </div>
+
+        <div class="col-md-6 py-3 py-md-0">
+          <h2>How Travel Smart Work</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe alias sunt in, architecto voluptatibus ex,
+            officiis sapiente ut a enim ea voluptas nihil facere animi nobis illo nisi? Ad, itaque?</p>
+          <button id="about-btn">Read More...</button>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- about end-->
+
+
+
+  <!-- fooder -->
+  <footer id="footer-section" class="footer-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 text-center mb-3">
+              <h1><span>Travel</span>Smart</h1>
+              <p>"Explore the World, Create Memories"</p>
+            </div>
+            <div class="col-md-3 text-center mb-3">
+              <div class="branch">
+                <h3 style="color:#FF1493">Branch Locations</h3>
+                <a href="#">India</a><br>
+                <a href="#">US</a><br>
+                <a href="#">France</a><br>
+                <a href="#">Vietnam</a><br>
+                <a href="#">China</a>
+            </div>
+          </div>
+            <div class="col-md-3 text-center mb-3">
+              <div class="quick-link">
+                <h3 style="color:#FF1493">Quick Links</h3>
+                <a href="#">Home</a><br>
+                <a href="#">Book</a><br>
+                <a href="#">Packages</a><br>
+                <a href="#">Services</a><br>
+                <a href="#">Gallery</a><br>
+                <a href="#">Review</a>
+              </div>
+            </div>
+            <div class="col-md-3 text-center mb-3">
+            <div class="social-links">
+                <h3 style="color:#FF1493">Follow Us</h3>
+                <i class="fa-brands fa-twitter mx-2"></i>
+                <i class="fa-brands fa-facebook mx-2"></i>
+                <i class="fa-brands fa-instagram mx-2"></i>
+                <i class="fa-brands fa-youtube mx-2"></i>
+                <i class="fa-brands fa-tiktok mx-2"></i>
+            </div>
+          </div>
+        </div>
+    </div>
+</footer>
+  <!-- fooder -->
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+
+</html>
