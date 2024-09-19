@@ -10,6 +10,7 @@
 
   <!--bootstrap-->
   <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/gallerystyle.css" rel="stylesheet">
   <!--font awesome-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap" rel="stylesheet">
@@ -17,13 +18,14 @@
 </head>
 
 <body>
-  
 
-  
+  <!--header-->
+
   <!--nav bar-->
   <nav class="navbar navbar-expand-lg" id="navbar">
     <div class="container">
-      <a class="navbar-brand" href="index.html" id="logo"><span>Travel</span>Smart</a>
+      <a href="index.html" class="logo"><span style="color: black;">Travel</span><span
+          style="color: #F70409;">Smart</span></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
         <span><i class="fa-solid fa-bars"></i></span>
       </button>
@@ -38,47 +40,108 @@
           <li class="nav-item">
             <a class="nav-link" href="#packages">Packages</a>
           </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="#services">Services</a>
-          </li> -->
+
+
           <li class="nav-item">
-            <a class="nav-link" href="#gallery">Gallery</a>
+            <a class="nav-link" href="./contact.html">Contact</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="about.html">About</a>
           </li>
 
         </ul>
-        
-        <form class="d-flex">
-          <input class="form-control me-2" type="text" placeholder="Search">
-          <button class="btn btn-primary" type="button">Search</button>
-        </form>
+
+
         <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="fa-solid fa-user"></i>
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="userDropdown" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="fa-solid fa-user"></i>
           </button>
           <ul class="dropdown-menu" aria-labelledby="userDropdown">
-              <li><a class="dropdown-item" href="#">Login</a></li>  
+            <li><a class="dropdown-item" href="login.html" style="font-size: 15px;">Login</a></li>
+            <li><a class="dropdown-item" href="register.html" style="font-size: 15px;">Sign in</a></li>
           </ul>
-      </div>
+        </div>
       </div>
     </div>
   </nav>
-  <!--nav bar end-->
-  <!--home section-->
-  <div class="home">
-    <video autoplay loop muted play-inline class="background-clip">
-    <source src="./images/vid2.mp4" type="video/mp4">  
-    </video>
-    <div class="content">
-      <h5>Welcome To World</h5>
-      <h1>Visit <span class="changecontent"></span></h1>
-      <p>"Your Adventure Begins Here"</p>
-      <a href="#book">Book Place</a>
+  <!-- nav bar -->
+
+  <section class="banner">
+    <div class="slider">
+      <div class="slide active">
+        <img src="images/india.jpg" alt="" />
+        <div class="left-info">
+          <div class="penetrate-blur">
+            <h1>In</h1>
+          </div>
+          <div class="content">
+            <h3>India Tour</h3>
+            <p>Lorem ipsum dolor sit amet consectetur...</p>
+            <a href="#" class="btn">More Details</a>
+          </div>
+        </div>
+        <div class="right-info">
+          <h1>dia</h1>
+          <h3>Tour</h3>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="images/gallery5.jpg" alt="" />
+        <div class="left-info">
+          <div class="penetrate-blur">
+            <h1>Viet</h1>
+          </div>
+          <div class="content">
+            <h3>Viet Nam Tour</h3>
+            <p>Lorem ipsum dolor sit amet consectetur...</p>
+            <a href="#" class="btn">More Details</a>
+          </div>
+        </div>
+        <div class="right-info">
+          <h1>Nam</h1>
+          <h3>Tour</h3>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="images/france.jpg" alt="" />
+        <div class="left-info">
+          <div class="penetrate-blur">
+            <h1>Fra</h1>
+          </div>
+          <div class="content">
+            <h3>France Tour</h3>
+            <p>Lorem ipsum dolor sit amet consectetur...</p>
+            <a href="#" class="btn">More Details</a>
+          </div>
+        </div>
+        <div class="right-info">
+          <h1>nce</h1>
+          <h3>Tour</h3>
+        </div>
+      </div>
+
     </div>
-  </div>
-  <!--end home section-->
+
+    <div class="navigation">
+      <span class="prev-btn">
+        <i class="fa-solid fa-chevron-left"></i>
+      </span>
+      <span class="next-btn">
+        <i class="fa-solid fa-chevron-right"></i>
+      </span>
+    </div>
+  </section>
+
+  <script src="js/script.js"></script>
+
+
+
+  <!--header-->
+
+
 
 
 
@@ -87,11 +150,15 @@
 
   <!--package-->
   <section class="packages" id="packages">
+
     <div class="container">
       <div class="main-txt">
         <h1>New and Most Popular Tours</h1>
       </div>
       <div class="row" style="margin-top: 30px;">
+        <div class="search-bar">
+          <input type="text" id="searchInput" placeholder="Search...">
+        </div>
 
         <div class="col-md-4 py-3 py-md-0">
 
@@ -237,7 +304,7 @@
     <div class="container">
 
       <div class="main-txt">
-        <h1><span>S</span>ervices</h1>
+        <h1><span>We Work</span> With Heart</h1>
       </div>
 
       <div class="row" style="margin-top: 30px;">
@@ -285,6 +352,8 @@
 
   <!-- Gallery -->
 
+  <!-- Gallery -->
+
   <section class="gallery" id="gallery">
     <div class="container">
       <div class="main-txt">
@@ -293,18 +362,33 @@
 
       <div class="row" style="margin-top: 30px;">
         <div class="col-md-4 py-3 py-md-0">
-          <div class="card">
-            <img src="./images/gallery1.png" alt="" height="230px">
+          <img class="myImg" src="images/gallery1.png" alt="Egypt" style="width:100%;max-width:420px;height:230px">
+
+          <!-- The Modal -->
+          <div class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content">
+            <div class="caption"></div>
           </div>
         </div>
         <div class="col-md-4 py-3 py-md-0">
-          <div class="card">
-            <img src="./images/gallery2.jpeg" alt="" height="230px">
+          <img class="myImg" src="images/gallery2.jpeg" alt="Thailand" style="width:100%;max-width:420px;height:230px">
+
+          <!-- The Modal -->
+          <div class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content">
+            <div class="caption"></div>
           </div>
         </div>
         <div class="col-md-4 py-3 py-md-0">
-          <div class="card">
-            <img src="./images/gallery3.png" alt="" height="230px">
+          <img class="myImg" src="images/India_picture.jpg" alt="India" style="width:100%;max-width:420px;height:230px">
+
+          <!-- The Modal -->
+          <div class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content">
+            <div class="caption"></div>
           </div>
         </div>
       </div>
@@ -312,18 +396,33 @@
 
       <div class="row" style="margin-top: 30px;">
         <div class="col-md-4 py-3 py-md-0">
-          <div class="card">
-            <img src="./images/gallery4.png" alt="" height="230px">
+          <img class="myImg" src="images/gallery4.png" alt="France" style="width:100%;max-width:420px;height:230px">
+
+          <!-- The Modal -->
+          <div class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content">
+            <div class="caption"></div>
           </div>
         </div>
         <div class="col-md-4 py-3 py-md-0">
-          <div class="card">
-            <img src="./images/gallery5.jpg" alt="" height="230px">
+          <img class="myImg" src="images/chinapicture.jpg" alt="China" style="width:100%;max-width:420px;height:230px">
+
+          <!-- The Modal -->
+          <div class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content">
+            <div class="caption"></div>
           </div>
         </div>
         <div class="col-md-4 py-3 py-md-0">
-          <div class="card">
-            <img src="./images/gallery6.jpg" alt="" height="230px">
+          <img class="myImg" src="images/gallery6.jpg" alt="Viet Nam" style="width:100%;max-width:420px;height:230px">
+
+          <!-- The Modal -->
+          <div class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content">
+            <div class="caption"></div>
           </div>
         </div>
       </div>
@@ -338,7 +437,7 @@
 
   <!-- about -->
 
-  <section class="about" id="about">
+  <section class="about1" id="about">
     <div class="container">
       <div class="main-txt">
         <h1>About<span> Us</span></h1>
@@ -348,13 +447,13 @@
       <div class="row" style="margin-top: 50px;">
         <div class="col-md-12">
           <h2>How Travel Smart Work</h2>
-          <p>Our mission is to provide  an adventure activities through trekking, 
+          <p>Our mission is to provide an adventure activities through trekking,
             hiking for nature lovers and experience hunters</p>
-          <p>We emphasize a creative and dynamic working environment that fosters the 
+          <p>We emphasize a creative and dynamic working environment that fosters the
             development of talents and expertise in every position.</p>
           <button id="about-btn"><a href="about.html">Read More...</a> </button>
         </div>
-        
+
       </div>
 
     </div>
@@ -368,50 +467,80 @@
   <!-- fooder -->
   <footer id="footer-section" class="footer-content">
     <div class="container">
-        <div class="row">
-            <div class="col-md-3 text-center mb-3">
-              <h1><span>Travel</span>Smart</h1>
-              <p>"Explore the World, Create Memories"</p>
-            </div>
-            <div class="col-md-3 text-center mb-3">
-              <div class="branch">
-                <h3 style="color:#FF1493">Branch Locations</h3>
-                <a href="#">India</a><br>
-                <a href="#">US</a><br>
-                <a href="#">France</a><br>
-                <a href="#">Vietnam</a><br>
-                <a href="#">China</a>
-            </div>
+      <div class="row">
+        <div class="col-md-3 text-center mb-3">
+          <h1><span>Travel</span>Smart</h1>
+          <p>"Explore the World, Create Memories"</p>
+        </div>
+        <div class="col-md-3 text-center mb-3">
+          <div class="branch">
+            <h3 style="color:#F70409">Branch Locations</h3>
+            <a href="#">India</a><br>
+            <a href="#">US</a><br>
+            <a href="#">France</a><br>
+            <a href="#">Vietnam</a><br>
+            <a href="#">China</a>
           </div>
-            <div class="col-md-3 text-center mb-3">
-              <div class="quick-link">
-                <h3 style="color:#FF1493">Quick Links</h3>
-                <a href="#">Home</a><br>
-                <a href="#">Book</a><br>
-                <a href="#">Packages</a><br>
-                <a href="#">Services</a><br>
-                <a href="#">Gallery</a><br>
-                <a href="#">Review</a>
-              </div>
+        </div>
+        <div class="col-md-3 text-center mb-3">
+          <div class="quick-link">
+            <h3 style="color:#F70409">Quick Links</h3>
+            <a href="#">Home</a><br>
+            <a href="#">Book</a><br>
+            <a href="#">Packages</a><br>
+            <a href="#">Services</a><br>
+            <a href="#">Gallery</a><br>
+            <a href="#">Review</a>
+          </div>
+        </div>
+        <div class="col-md-3 text-center mb-3">
+          <h3 style="color:#F70409">Follow Us</h3>
+          <div class="social-menu">
+            <div class="social-icon">
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <span>Twitter</span>
             </div>
-            <div class="col-md-3 text-center mb-3">
-            <div class="social-links">
-                <h3 style="color:#FF1493">Follow Us</h3>
-                <i class="fa-brands fa-twitter mx-2"></i>
-                <i class="fa-brands fa-facebook mx-2"></i>
-                <i class="fa-brands fa-instagram mx-2"></i>
-                <i class="fa-brands fa-youtube mx-2"></i>
-                <i class="fa-brands fa-tiktok mx-2"></i>
+            <div class="social-icon">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <span>Facebook</span>
+            </div>
+            <div class="social-icon">
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <span>Instagram</span>
+            </div>
+            <div class="social-icon">
+              <a href=""><i class="fa-brands fa-github"></i></a>
+              <span>Github</span>
+            </div>
+            <div class="social-icon">
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+              <span>Youtube</span>
             </div>
           </div>
         </div>
+      </div>
     </div>
-</footer>
+  </footer>
   <!-- fooder -->
 
 
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/galleryscript.js"></script>
+  <script>
+    document.getElementById('searchInput').addEventListener('keyup', function () {
+      const searchValue = this.value.toLowerCase();
+      const cards = document.querySelectorAll('.card');
 
+      cards.forEach(card => {
+        const title = card.querySelector('h3').textContent.toLowerCase();
+        if (title.includes(searchValue)) {
+          card.parentElement.style.display = 'block';
+        } else {
+          card.parentElement.style.display = 'none';
+        }
+      });
+    });
+  </script>
 </body>
 
 

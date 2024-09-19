@@ -7,25 +7,25 @@
     scroll-behavior: smooth;
     /* font-family: "Lato", sans-serif; */
     font-family: "Sofadi One", system-ui;
+    box-sizing: border-box;
+    
+    /* font-family: 'Montserrat', sans-serif; */
 }
 
-#navbar{
-    background: #f9f9f9;
+/* header */
 
-}
-#logo{
-    font-size: 40px;
-    font-weight: 600;
-    color: black;
-    text-shadow: 0px 1px 1px black;
-    margin-bottom: 5px;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 
-}
-#logo span{
-    color: #FF1493;
-}
+/* Đặt các thuộc tính cơ bản và phông chữ
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+} */
+
 .navbar-toggler span{
-    color: #FF1493;
+    color: #F70409;
 }
 .navbar-nav{
     margin-left: 20px;
@@ -42,14 +42,14 @@
 
 }
 .nav-item .nav-link:hover{
-    background: #FF1493;
+    background: #F70409;
     color: white;
 }
 #navbar form{
     margin-left: 20px;
 }
 #navbar form button{
-    background: #FF1493;
+    background: #F70409;
     color: white;
     border: none;
 
@@ -65,111 +65,336 @@
     min-width: 200px;
 }
 
-/* Home section */
-.home{
-    width: 100%;
-    height: 90vh;
-    /* background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(../images/background.jpg);
-    background-repeat: no-repeat; */
-    background-size:cover;
 
-}
-.home .background-clip{
+/* Định dạng header */
+/* .header {
     position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-}
-.home .content{
-    text-align: center;
-    padding-top: 200px;
-
-}
-.home .content h5{
-    /* color: white; */
-    color: rgb(255, 255, 255);
-    font-size: 50px;
-    font-weight: 700;
-    text-shadow: 0px 1px 1px black;
-}
-.home .content h1{
-    color: white;
-    font-size: 70px;
-    font-weight: 600;
-    text-shadow: 0px 1px 1px black;
-    margin-top: 5px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 5%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f1fde2;
+    
 }
 
-.changecontent::after{
-    content:' ';
-    color:#FF1493;
-    text-shadow: 0px 1px 1px black;
-    animation: changetext 10s infinite linear;
-}
-@keyframes changetext{
-    0%{content: "France";}
-    10%{content: "Spain";}
-    20%{content: "United States";}
-    30%{content: "China";}
-    40%{content: "India";}
-    50%{content: "Pakistan";}
-    60%{content: "Italy";}
-    70%{content: "Turkey";}
-    80%{content: "Mexico";}
-    90%{content: "Germany";}
-    100%{content: "Viet Nam";}
+
+.header .dropdown-toggle {
+    background: transparent;
+    border: none;
+    color: inherit;
+    margin-left: auto;
 }
 
-.home .content p{
-    color: white;
-    font-size: 25px;
-    font-weight: 600;
-    text-shadow: 0px 1px 1px black;
-    margin-bottom: 30px;
-    margin-top: 5px;
+.header form{
+    margin-left: 20px;
 }
-
-.home .content a{
-    padding: 10px;
-    background: white;
-    color: black;
-    letter-spacing: 2px;
-    font-weight: 550;
-    border-radius: 5px;
-    transition: 0.5s;
-    text-decoration: none;
-}
-.home .content a:hover{
+.header form button{
     background: #FF1493;
+    color: white;
+    border: none;
+
 }
-@media (min-aspect-ratio:16/9){
-    .home .background-clip{
-        width: 100%;
-        height: auto;
-    }
+.header form button:hover{
+    background: #ff1414;
+
+
 }
-@media (min-aspect-ratio:16/9){
-    .home .background-clip{
-        width: auto;
-        height: 120vh;
-    }
+
+.logo {
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
 }
-@media (max-width:900px){
-    .home .content h5{
-        font-size: 25px;
-    }
-    .home .content h1{
-        font-size: 38px;
-    }
-    .home .content p{
-        font-size: 13px;
-    }
+
+.social-media {
+    margin: 0 auto 0 50px;
 }
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #d7d7d7;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: .5s;
+}
+
+.social-media a:hover {
+    background: #fff;
+}
+
+.social-media a i {
+    font-size: 20px;
+    color: #7d7d7d;
+    transition: .5s;
+}
+
+.social-media a:hover i {
+    color:#fda3d3;
+} */
+
+.navbar a {
+    font-size: 30px;
+    color: #7d7d7d;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 30px;
+    text-shadow: 0 0 0 4px rgba(0, 0, 0, 0.2);
+}
+.navbar a:hover{
+    color:#F70409;
+}
+
+/* Định dạng banner và các slide */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.slider .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.slide img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.35s ease;
+    /* Hiệu ứng mờ dần của hình ảnh */
+}
+
+.slide.active img {
+    opacity: 1;
+    /* Hiển thị hình ảnh khi active */
+}
+
+/* Định dạng thông tin bên trái và bên phải của slide */
+.slide .left-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    transform: translateX(-100%);
+    /* Di chuyển ra khỏi khung nhìn từ bên trái */
+    transition: transform 0.3s ease, opacity  ease;
+    /* Di chuyển và hiệu ứng mờ dần */
+    opacity: 0;
+    /* Ẩn khi không active */
+}
+
+.slide.active .left-info {
+    transform: translateX(0);
+    /* Di chuyển vào khung nhìn khi active */
+    opacity: 1;
+    /* Hiển thị khi active */
+}
+
+.left-info .penetrate-blur {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(30px);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    -webkit-mask: linear-gradient(#000 0 0),
+        linear-gradient(#000 0 0);
+    -webkit-mask-clip: text, padding-box;
+    -webkit-mask-composite: xor;
+    padding-right: 20px;
+}
+
+.penetrate-blur h1 {
+    font-size: 250px; 
+    text-shadow: 0 0 10px rgba(255, 255, 255, .8);
+}
+
+.slide:nth-child(1) .penetrate-blur h1,
+.slide:nth-child(4) .penetrate-blur h1 {
+margin-right: -10px;
+}
+
+.left-info .content {
+    position: absolute;
+    bottom: 8%;
+    left: 10%;
+    color: #fff;
+}
+
+.content h3 {
+    font-size: 20px;
+}
+
+.content p {
+    font-size: 16px;
+    margin: 10px 0 15px;
+}
+
+.content .btn {
+    display: inline-block;
+    padding: 13px 28px;
+    background: #fff;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    font-size: 16px;
+    color: #444;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.content .btn:hover {
+    background: #444;
+    color: #fff;
+    transform: scale(1.05);
+    /* Thêm hiệu ứng phóng to nhẹ khi hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    /* Thay đổi độ bóng để thêm hiệu ứng nổi bật */
+}
+.banner .content .btn:hover{
+    background: #444;
+    color: #fff;
+    transform: scale(1.05);
+    /* Thêm hiệu ứng phóng to nhẹ khi hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    /* Thay đổi độ bóng để thêm hiệu ứng nổi bật */
+}
+
+
+
+
+.slide .right-info {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transform: translateX(100%);
+    /* Di chuyển ra khỏi khung nhìn từ bên phải */
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    /* Di chuyển và hiệu ứng mờ dần */
+    opacity: 0;
+    /* Ẩn khi không active */
+}
+
+.slide.active .right-info {
+    transform: translateX(0);
+    /* Di chuyển vào khung nhìn khi active */
+    opacity: 1;
+    /* Hiển thị khi active */
+}
+
+.right-info h1 {
+    font-size: 250px;
+    color: #fff;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
+}
+
+.slide:nth-child(2) .right-info h1,
+.slide:nth-child(4) .right-info h1 {
+    margin-left: 10px;
+}
+
+.right-info h3 {
+    position: absolute;
+    font-size: 80px;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    transform: translateY(150%);
+    margin-left: 13px;
+}
+
+/* Định dạng navigation */
+.navigation {
+    position: absolute;
+    bottom: 8%;
+    right: 5%;
+    z-index: 99;
+}
+
+.navigation span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    cursor: pointer;
+    margin-left: 25px;
+    transition: .5s;
+}
+
+.navigation span:nth-child(1) {
+    background: transparent;
+}
+
+.navigation span:nth-child(1):hover {
+    background: #fff;
+}
+
+.navigation span i {
+    font-size: 45px;
+    color: #444;
+    transition: .5s;
+}
+
+.navigation span:nth-child(1) i {
+    color: #fff;
+}
+
+.navigation span:nth-child(1):hover i {
+    color: #444;
+}
+
+/* Cập nhật nút điều khiển bên phải */
+.navigation span:nth-child(2) {
+    background: transparent;
+}
+
+.navigation span:nth-child(2):hover {
+    background: #fff;
+}
+.navigation span:nth-child(2) i {
+    color: #fff;
+}
+
+.navigation span:nth-child(2):hover i {
+    color: #444;
+}
+
+/* header */
 
 /* section book css */
 .book{
-    background: white;
+    background: #DFEFF1;
     padding: 50px;
+    margin-top: 15px;
 } 
 .main-text h1{
     text-align: center;
@@ -177,7 +402,7 @@
     font-weight: 600;
 }
 .main-text h1 span{
-    color: #FF1493;
+    color: #F70409;
 }
 .book .card{
     border-radius:10px;
@@ -211,7 +436,7 @@
     width: 160px;
     font-size: 16px;
     font-weight: 550;
-    background: #FF1493;
+    background: #ff7b7d;
     color: white;
     margin-top: 10px;
     transition: 0.5s;
@@ -219,7 +444,7 @@
 
 .book .submit:hover{
     width: 170px;
-    background: #ff1414;  
+    background: #F70409;  
 }
 @media(max-width:700px){
     .book{
@@ -231,13 +456,27 @@
 }
 
 /* packages css */
+
+.search-bar {
+    margin-bottom: 20px;
+    
+}
+
+#searchInput {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 50px;
+}
+
+
 .main-txt h1{
     text-align: center;
     margin-top: 30px;
     font-weight: 600;
 }
 .main-txt h1 span{
-    color: #FF1493;
+    color: #F70409;
 }
 .packages .card{
     border-radius: 5px;
@@ -269,7 +508,7 @@
 .packages .card .card-body a{
     padding: 10px;
     text-decoration: none;
-    background: #FF1493;
+    background: #F70409;
     color: #f9f9f9;
     border-radius: 5px;
 
@@ -286,11 +525,16 @@
     cursor: pointer;
     transition: 0.5s;
 }
+
 .services .card i{
     font-size: 80px;
     text-align: center;
     color: #4c494a;
     margin-top: 20px;
+}
+.services .card i:hover{
+    color: #F70409; 
+    
 }
 .services .card .card-body h3{
     font-weight: 600;
@@ -300,7 +544,8 @@
 }
 .services .card:hover{
     transform: scale(1.1);
-}
+    color: #F70409;
+} 
 
 /* gallery */
 .gallery{
@@ -325,9 +570,10 @@
 /* about */
 .about{
     padding: 50px;
-    margin-top: 50px; 
+    margin-top: 10px;
+    margin-bottom: 10px; 
     /* background: rgba(249, 199, 199, 0.853); */
-    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(../images/background.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(../images/aboutbackground.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     border-radius: 10px;
@@ -355,7 +601,7 @@
 .about h2{
     font-weight: 600;
     letter-spacing: 1px;
-    color:#fda3d3;
+    color:#fbfbfb;
 }
 .about p{
     font-weight: 500;
@@ -367,7 +613,7 @@
     height: 38px;
     border: none;
     border-radius: 50px;
-    background: #FF1493;
+    background: #F70409;
     color: white;
     letter-spacing: 2px;
     font-weight: 550;
@@ -386,10 +632,10 @@
 /* footer */
 #footer-section {
     width: 100%;
-    margin-top: 150px;
+    margin-top: 10px;
     text-align: center;
-    background: #f9f9f9;
-    padding-bottom: 100px;
+    background: #e9eef5;
+    padding-bottom: 50px;
     padding-top: 50px;
 }
 
@@ -400,7 +646,7 @@
 }
 
 #footer-section h1 span {
-    color: #FF1493;
+    color: #F70409;
 }
 
 .footer-content .social-links i {
@@ -429,11 +675,11 @@
     
 }
 .footer-content .quick-link a:hover{
-    color: goldenrod;
+    color:#F70409;
 }
 
 .footer-content .social-links i:hover {
-    color: #FF1493;
+    color: #F70409;
 }
 
 .footer-content .branch a {
@@ -450,9 +696,135 @@
     
 }
 .footer-content .branch a:hover{
-    color: goldenrod;
+    color: #F70409;
 }
 
+/**/
+.social-menu {
+    position: relative;
+    display: flex;
+}
 
+.social-icon {
+    position: relative;
+}
 
+.social-icon a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 8px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .3);
+    transform: translate(0) scale(1);
+    transition: .3s;
+}
 
+.social-icon:hover a {
+    transform: translateY(-6px) scale(1.2);
+    margin: 0 20px;
+}
+
+.social-icon:nth-child(1):hover a {
+    background: #1da1f2;
+}
+
+.social-icon:nth-child(2):hover a {
+    background: #3b5998;
+}
+
+.social-icon:nth-child(3):hover a {
+    background: #c32aa3;
+}
+
+.social-icon:nth-child(4):hover a {
+    background: #211f1f;
+}
+
+.social-icon:nth-child(5):hover a {
+    background: #ff0000;
+}
+
+.social-icon a i {
+    font-size: 18px;
+    color: black;
+    line-height: 40px;
+    transition: .3s;
+}
+
+.social-icon:hover a i {
+    color: #fff;
+}
+
+.social-icon span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    font-size: 16px;
+    z-index: 1;
+    transition: .3s;
+}
+
+.social-icon:hover span {
+    transform: translate(-50%, 90%) scale(1);
+    z-index: 2;
+}
+
+.social-icon:nth-child(1):hover span {
+    color: #1da1f2;
+}
+
+.social-icon:nth-child(2):hover span {
+    color: #3b5998;
+}
+
+.social-icon:nth-child(3):hover span {
+    color: #F70409;
+}
+
+.social-icon:nth-child(4):hover span {
+    color: #211f1f;
+}
+
+.social-icon:nth-child(5):hover span {
+    color: #F70409;
+}
+
+.contact{
+    background: #DFEFF1;
+    padding: 50px;
+    margin-top: 15px;
+}
+.contact form input{
+    padding: 10px;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -5px black;
+}
+
+.contact form textarea{
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    box-shadow: 0px 5px 5px -6px black;
+    height: 150px;
+}
+
+.contact .submit{
+    width: 160px;
+    font-size: 16px;
+    font-weight: 550;
+    background: #F70409;
+    color: white;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+.contact .submit:hover{
+    background: rgb(255, 76, 40);
+}
