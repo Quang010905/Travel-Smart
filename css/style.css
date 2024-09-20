@@ -5,24 +5,18 @@
     text-decoration: none;
     list-style: none;
     scroll-behavior: smooth;
-    /* font-family: "Lato", sans-serif; */
+
     font-family: "Sofadi One", system-ui;
     box-sizing: border-box;
     
-    /* font-family: 'Montserrat', sans-serif; */
+
 }
 
 /* header */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 
-/* Đặt các thuộc tính cơ bản và phông chữ
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-} */
+
 
 .navbar-toggler span{
     color: #F70409;
@@ -65,84 +59,6 @@
     min-width: 200px;
 }
 
-
-/* Định dạng header */
-/* .header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px 5%;
-    background: transparent;
-    display: flex;
-    align-items: center;
-    z-index: 100;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #f1fde2;
-    
-}
-
-
-.header .dropdown-toggle {
-    background: transparent;
-    border: none;
-    color: inherit;
-    margin-left: auto;
-}
-
-.header form{
-    margin-left: 20px;
-}
-.header form button{
-    background: #FF1493;
-    color: white;
-    border: none;
-
-}
-.header form button:hover{
-    background: #ff1414;
-
-
-}
-
-.logo {
-    font-size: 30px;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 700;
-}
-
-.social-media {
-    margin: 0 auto 0 50px;
-}
-
-.social-media a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    background: transparent;
-    border: 2px solid #d7d7d7;
-    border-radius: 6px;
-    text-decoration: none;
-    margin-right: 10px;
-    transition: .5s;
-}
-
-.social-media a:hover {
-    background: #fff;
-}
-
-.social-media a i {
-    font-size: 20px;
-    color: #7d7d7d;
-    transition: .5s;
-}
-
-.social-media a:hover i {
-    color:#fda3d3;
-} */
 
 .navbar a {
     font-size: 30px;
@@ -194,18 +110,17 @@
     width: 50%;
     height: 100%;
     transform: translateX(-100%);
-    /* Di chuyển ra khỏi khung nhìn từ bên trái */
+
     transition: transform 0.3s ease, opacity  ease;
-    /* Di chuyển và hiệu ứng mờ dần */
+
     opacity: 0;
-    /* Ẩn khi không active */
+
 }
 
 .slide.active .left-info {
     transform: translateX(0);
-    /* Di chuyển vào khung nhìn khi active */
     opacity: 1;
-    /* Hiển thị khi active */
+
 }
 
 .left-info .penetrate-blur {
@@ -918,3 +833,52 @@ margin-right: -10px;
 
 
 /* bookdetail */
+
+/*flipc card*/
+
+.flip-box {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+}
+
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-box-front,
+.flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-box-front {
+    /* background-image: url(/images/background.jpg); */
+    background-size: cover;
+    background-position: center;
+    color: black;
+}
+
+.flip-box-back {
+    /* background-image: url(img/2.jpg); */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+/*flip card*/
