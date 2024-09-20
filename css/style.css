@@ -579,6 +579,61 @@ margin-right: -10px;
     border-radius: 10px;
     
 }
+.herocontainer {
+    display: flex;
+    justify-content: space-between; /* Giúp tạo khoảng cách giữa các phần tử */
+    gap: 10px; /* Khoảng cách giữa 2 hero */
+    margin-top: 20px;
+    border-radius: 15px;
+  }
+  
+  .hero-image {
+
+    height: 50vh;
+    width: 50%; /* Chia không gian để 2 hero có thể vừa nhau trên 1 hàng */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 15px;
+  }
+  .hero2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/india.jpg");
+  }
+  .hero1{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/vietnam.jpg");
+  }
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  
+  .hero-text button {
+    border-radius:20px ;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    
+    background-color: #ff5254;
+    text-align: center;
+    cursor: pointer;
+
+  }
+
+  .hero-text button a{
+    text-decoration: none;
+    color: white;
+
+  }
+  
+  .hero-text button:hover {
+    background-color: #ff0000;
+    color: white;
+  }
 /* .about .card{
     border-radius: 10px;
 } */
@@ -828,3 +883,38 @@ margin-right: -10px;
 .contact .submit:hover{
     background: rgb(255, 76, 40);
 }
+
+
+/* bookdetail */
+.main-image-container {
+    width: 100%;
+    margin-bottom: 15px;
+}
+.main-image {
+    width: 100%; 
+    object-fit: cover;
+}
+
+/* Thumbnails */
+.tour-thumbnails img {
+    width: 32%; /* Adjust thumbnail size to make them fit evenly */
+    height: auto;
+    object-fit: cover;
+    margin-right: 5px;
+}
+.tour-details {
+    background-color: #ffffff; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    height: 100%;
+}
+.row.align-items-center {
+    display: flex;
+    align-items: center; /* Aligns image and text details on the same line */
+    }
+
+
+/* bookdetail */

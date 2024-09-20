@@ -1,0 +1,716 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: "Sofadi One", system-ui;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+/* navbar  */
+#navbar{
+    background: #f9f9f9;
+
+}
+#logo{
+    font-size: 40px;
+    font-weight: 600;
+    color: black;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 5px;
+
+}
+#logo span{
+    color: #d42040;
+}
+.navbar-toggler span{
+    color: #d42040;
+}
+.navbar-nav{
+    margin-left: 20px;
+
+}
+.nav-item .nav-link{
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+
+
+}
+.nav-item .nav-link:hover{
+    background: #d42040;
+    color: white;
+}
+#navbar form button{
+    background: #d42040;
+    color: white;
+    border: none;
+
+}
+
+
+
+
+
+/* Home England */
+.home{
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(../images/uk.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home .content{
+    text-align: center;
+    padding-top: 200px;
+
+}
+.home .content h5{
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+    text-shadow: 0px 1px 1px black;
+}
+
+.home .content h1{
+    color: white;
+    font-size: 70px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+    
+}
+
+.home .content span{
+    color:  #d42040;
+
+}
+
+.home .content p{
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+.home .content a{
+    padding: 10px;
+    background: white;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 550;
+    border-radius: 5px;
+    transition: 0.5s;
+    text-decoration: none;
+}
+.home .content a:hover{
+    background: #d42040;
+}
+@media (max-width:850px){
+    .home{
+        background-position: 50%;
+    }
+}
+@media (max-width:850px){
+    .home .content h5{
+        font-size: 25px;
+    }
+    .home .content h1{
+        font-size: 38px;
+    }
+    .home .content p{
+        font-size: 13px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+#footer{
+    width: 100%;
+    margin-top: 150px;
+    text-align: center;
+    background: #f9f9f9;
+    padding-bottom: 100px;
+
+}
+#footer h1{
+    font-weight: 600;
+    padding-top: 30px;
+    text-shadow: 0px 0px 1px black;
+}
+#footer h1 span{
+   
+    color: #d42040;
+}
+.social-links i{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    background: black;
+    color: #f9f9f9;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 0.5 ease;
+    cursor:pointer;
+}
+.social-links i:hover{
+    color: #d42040;
+}
+
+
+
+/* gallery */
+.gallery{
+    margin-top: 50px;
+}
+.gallery .card{
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    cursor: pointer;
+}
+.gallery .card img{
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.gallery .card img:hover{
+    transform: scale(1.1);
+}
+
+.gallery .container .main-txt span {
+    color: #d42040;
+    
+}
+
+.gallery .container .main-txt h1 {
+    text-align: center;
+    font-weight: bolder ;
+}
+
+
+
+
+
+/* gallery */
+.packages{
+    margin-top: 50px;
+}
+.packages .card{
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    cursor: pointer;
+}
+.packages .card img{
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.packages .card img:hover{
+    transform: scale(1.1);
+}
+
+.packages .container .main-txt span {
+    color: #d42040;
+    
+}
+
+.packages .container .main-txt h1 {
+    text-align: center;
+    font-weight: bolder ;
+}
+
+
+
+
+
+/* packages tour  */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .package-tour {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .package-tour .card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    overflow: hidden;
+    width: 250px;
+    height: 420px;
+  }
+  
+  .package-tour .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .package-tour .card-content {
+    padding: 5px 10px 5px 10px;
+  
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .package-tour .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .package-tour .card-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .package-tour .card-details p {
+    margin: 0;
+   
+  }
+  
+  .package-tour .card-button {
+    background-color: #d42040;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+  }
+  .package-tour a{
+    text-decoration: none;
+    color: white;
+  }
+
+  .package-tour .card-button:hover{
+    background-color: #ffd813;
+  }
+
+
+
+
+
+
+
+
+  /* China */
+
+.home-china{
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(../images/china.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home-china .content{
+    text-align: center;
+    padding-top: 200px;
+
+}
+.home-china .content h5{
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+    text-shadow: 0px 1px 1px black;
+}
+
+.home-china .content h1{
+    color: white;
+    font-size: 70px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+    
+}
+
+.home-china .content span{
+    color:  #d42040;
+
+}
+
+.home-china .content p{
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+.home-china .content a{
+    padding: 10px;
+    background: white;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 550;
+    border-radius: 5px;
+    transition: 0.5s;
+    text-decoration: none;
+}
+.home-china .content a:hover{
+    background: #d42040;
+}
+@media (max-width:850px){
+    .home-china{
+        background-position: 50%;
+    }
+}
+@media (max-width:850px){
+    .home-china .content h5{
+        font-size: 25px;
+    }
+    .home-china .content h1{
+        font-size: 38px;
+    }
+    .home-china .content p{
+        font-size: 13px;
+    }
+}
+
+
+
+
+/* France  */
+
+ .home-france{
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(../images/france.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home-france .content{
+    text-align: center;
+    padding-top: 200px;
+
+}
+.home-france .content h5{
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+    text-shadow: 0px 1px 1px black;
+}
+
+.home-france .content h1{
+    color: white;
+    font-size: 70px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+    
+}
+
+.home-france .content span{
+    color:  #d42040;
+
+}
+
+.home-france .content p{
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+.home-france .content a{
+    padding: 10px;
+    background: white;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 550;
+    border-radius: 5px;
+    transition: 0.5s;
+    text-decoration: none;
+}
+.home-france .content a:hover{
+    background: #d42040;
+}
+@media (max-width:850px){
+    .home-france{
+        background-position: 50%;
+    }
+}
+@media (max-width:850px){
+    .home-france .content h5{
+        font-size: 25px;
+    }
+    .home-france .content h1{
+        font-size: 38px;
+    }
+    .home-france .content p{
+        font-size: 13px;
+    }
+}
+
+
+
+
+
+
+/* VietNam*/
+
+.home-VietNam{
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(../images/vietnam.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home-VietNam .content{
+    text-align: center;
+    padding-top: 200px;
+
+}
+.home-VietNam .content h5{
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+    text-shadow: 0px 1px 1px black;
+}
+
+.home-VietNam .content h1{
+    color: white;
+    font-size: 70px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+    
+}
+
+.home-VietNam .content span{
+    color:  #d42040;
+
+}
+
+.home-VietNam .content p{
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+.home-VietNam .content a{
+    padding: 10px;
+    background: white;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 550;
+    border-radius: 5px;
+    transition: 0.5s;
+    text-decoration: none;
+}
+.home-VietNam .content a:hover{
+    background: #d42040;
+}
+@media (max-width:850px){
+    .home-VietNam{
+        background-position: 50%;
+    }
+}
+@media (max-width:850px){
+    .home-VietNam .content h5{
+        font-size: 25px;
+    }
+    .home-VietNam .content h1{
+        font-size: 38px;
+    }
+    .home-VietNam .content p{
+        font-size: 13px;
+    }
+}
+
+
+
+
+/* Italy*/
+
+.home-Italy{
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(../images/italy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home-Italy .content{
+    text-align: center;
+    padding-top: 200px;
+
+}
+.home-Italy .content h5{
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+    text-shadow: 0px 1px 1px black;
+}
+
+.home-Italy .content h1{
+    color: white;
+    font-size: 70px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+    
+}
+
+.home-Italy .content span{
+    color:  #d42040;
+
+}
+
+.home-Italy .content p{
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+.home-Italy .content a{
+    padding: 10px;
+    background: white;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 550;
+    border-radius: 5px;
+    transition: 0.5s;
+    text-decoration: none;
+}
+.home-Italy .content a:hover{
+    background: #d42040;
+}
+@media (max-width:850px){
+    .home-Italy{
+        background-position: 50%;
+    }
+}
+@media (max-width:850px){
+    .home-Italy .content h5{
+        font-size: 25px;
+    }
+    .home-Italy .content h1{
+        font-size: 38px;
+    }
+    .home-Italy .content p{
+        font-size: 13px;
+    }
+}
+
+
+
+/* India*/
+
+.home-India{
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(../images/india.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home-India .content{
+    text-align: center;
+    padding-top: 200px;
+
+}
+.home-India .content h5{
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+    text-shadow: 0px 1px 1px black;
+}
+
+.home-India .content h1{
+    color: white;
+    font-size: 70px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+    
+}
+
+.home-India .content span{
+    color:  #d42040;
+
+}
+
+.home-India .content p{
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+.home-India .content a{
+    padding: 10px;
+    background: white;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 550;
+    border-radius: 5px;
+    transition: 0.5s;
+    text-decoration: none;
+}
+.home-India .content a:hover{
+    background: #d42040;
+}
+@media (max-width:850px){
+    .home-India{
+        background-position: 50%;
+    }
+}
+@media (max-width:850px){
+    .home-India .content h5{
+        font-size: 25px;
+    }
+    .home-India .content h1{
+        font-size: 38px;
+    }
+    .home-India .content p{
+        font-size: 13px;
+    }
+}
+
+
