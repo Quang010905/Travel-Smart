@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,7 +8,7 @@
 
     font-family: "Sofadi One", system-ui;
     box-sizing: border-box;
-    
+
 
 }
 
@@ -18,14 +18,16 @@
 
 
 
-.navbar-toggler span{
+.navbar-toggler span {
     color: #F70409;
 }
-.navbar-nav{
+
+.navbar-nav {
     margin-left: 20px;
 
 }
-.nav-item .nav-link{
+
+.nav-item .nav-link {
     font-size: 16px;
     font-weight: 500;
     color: black;
@@ -35,19 +37,23 @@
 
 
 }
-.nav-item .nav-link:hover{
+
+.nav-item .nav-link:hover {
     background: #F70409;
     color: white;
 }
-#navbar form{
+
+#navbar form {
     margin-left: 20px;
 }
-#navbar form button{
+
+#navbar form button {
     background: #F70409;
     color: white;
     border: none;
 
 }
+
 #navbar .dropdown-toggle {
     background: transparent;
     border: none;
@@ -68,8 +74,9 @@
     margin-left: 30px;
     text-shadow: 0 0 0 4px rgba(0, 0, 0, 0.2);
 }
-.navbar a:hover{
-    color:#F70409;
+
+.navbar a:hover {
+    color: #F70409;
 }
 
 /* Định dạng banner và các slide */
@@ -111,7 +118,7 @@
     height: 100%;
     transform: translateX(-100%);
 
-    transition: transform 0.3s ease, opacity  ease;
+    transition: transform 0.3s ease, opacity ease;
 
     opacity: 0;
 
@@ -140,13 +147,13 @@
 }
 
 .penetrate-blur h1 {
-    font-size: 250px; 
+    font-size: 250px;
     text-shadow: 0 0 10px rgba(255, 255, 255, .8);
 }
 
 .slide:nth-child(1) .penetrate-blur h1,
 .slide:nth-child(4) .penetrate-blur h1 {
-margin-right: -10px;
+    margin-right: -10px;
 }
 
 .left-info .content {
@@ -187,7 +194,8 @@ margin-right: -10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     /* Thay đổi độ bóng để thêm hiệu ứng nổi bật */
 }
-.banner .content .btn:hover{
+
+.banner .content .btn:hover {
     background: #444;
     color: #fff;
     transform: scale(1.05);
@@ -295,6 +303,7 @@ margin-right: -10px;
 .navigation span:nth-child(2):hover {
     background: #fff;
 }
+
 .navigation span:nth-child(2) i {
     color: #fff;
 }
@@ -306,30 +315,36 @@ margin-right: -10px;
 /* header */
 
 /* section book css */
-.book{
+.book {
     background: #DFEFF1;
     padding: 50px;
     margin-top: 15px;
-} 
-.main-text h1{
+}
+
+.main-text h1 {
     text-align: center;
     text-shadow: 0px 1px 1px black;
     font-weight: 600;
 }
-.main-text h1 span{
+
+.main-text h1 span {
     color: #F70409;
 }
-.book .card{
-    border-radius:10px;
+
+.book .card {
+    border-radius: 10px;
     box-shadow: 0px 5px 5px -6px black;
 }
-.book .card img{
+
+.book .card img {
     border-radius: 10px;
 }
-.book .row{
+
+.book .row {
     margin-top: 30px;
 }
-.book form input{
+
+.book form input {
     padding: 10px;
     color: black;
     border: none;
@@ -339,7 +354,7 @@ margin-right: -10px;
     box-shadow: 0px 5px 5px -5px black;
 }
 
-.book form textarea{
+.book form textarea {
     border: none;
     border-radius: 10px;
     resize: none;
@@ -347,7 +362,7 @@ margin-right: -10px;
     height: 150px;
 }
 
-.book .submit{
+.book .submit {
     width: 160px;
     font-size: 16px;
     font-weight: 550;
@@ -357,15 +372,17 @@ margin-right: -10px;
     transition: 0.5s;
 }
 
-.book .submit:hover{
+.book .submit:hover {
     width: 170px;
-    background: #F70409;  
+    background: #F70409;
 }
-@media(max-width:700px){
-    .book{
+
+@media(max-width:700px) {
+    .book {
         padding: 0;
     }
-    .main-text h1{
+
+    .main-text h1 {
         padding: 20px;
     }
 }
@@ -374,7 +391,7 @@ margin-right: -10px;
 
 .search-bar {
     margin-bottom: 20px;
-    
+
 }
 
 #searchInput {
@@ -385,42 +402,52 @@ margin-right: -10px;
 }
 
 
-.main-txt h1{
+.main-txt h1 {
     text-align: center;
     margin-top: 30px;
     font-weight: 600;
 }
-.main-txt h1 span{
+
+.main-txt h1 span {
     color: #F70409;
 }
-.packages .card{
+
+.packages .card {
     border-radius: 5px;
-    border:none;
-    box-shadow: black(0,0,0,0.1) 0px 4px 12px;
+    border: none;
+    box-shadow: black(0, 0, 0, 0.1) 0px 4px 12px;
 }
-.packages .card img{
+
+.packages .card img {
     border-radius: 5px;
 }
-.packages .card .card-body{
+
+.packages .card .card-body {
     background: transparent;
 }
-.packages .card .card-body h3{
+
+.packages .card .card-body h3 {
     font-size: 25px;
     font-weight: 600;
 }
-.packages .card .card-body p{
+
+.packages .card .card-body p {
     font-size: 15px;
 }
-.checked{
+
+.checked {
     color: gold;
 }
-.star i{
+
+.star i {
     font-size: 15px;
 }
-.packages .card .card-body h6{
+
+.packages .card .card-body h6 {
     font-size: 20px;
 }
-.packages .card .card-body a{
+
+.packages .card .card-body a {
     padding: 10px;
     text-decoration: none;
     background: #F70409;
@@ -430,125 +457,140 @@ margin-right: -10px;
 }
 
 /* service */
-.services{
+.services {
     background: white;
     margin-top: 50px;
 }
-.services .card{
-    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+
+.services .card {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     border: none;
     cursor: pointer;
     transition: 0.5s;
 }
 
-.services .card i{
+.services .card i {
     font-size: 80px;
     text-align: center;
     color: #4c494a;
     margin-top: 20px;
 }
-.services .card i:hover{
-    color: #F70409; 
-    
+
+.services .card i:hover {
+    color: #F70409;
+
 }
-.services .card .card-body h3{
+
+.services .card .card-body h3 {
     font-weight: 600;
 }
-.services .card .card-body h3{
+
+.services .card .card-body h3 {
     text-align: center;
 }
-.services .card:hover{
+
+.services .card:hover {
     transform: scale(1.1);
     color: #F70409;
-} 
+}
 
 /* gallery */
-.gallery{
+.gallery {
     margin-top: 50px;
 }
-.gallery .card{
+
+.gallery .card {
     border-radius: 10px;
-    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     cursor: pointer;
-    
+
 }
-.gallery .card img{
+
+.gallery .card img {
     border-radius: 10px;
     transition: 0.8s;
 }
-.gallery .card img:hover{
+
+.gallery .card img:hover {
     transform: scale(1.1);
     z-index: 1;
 }
 
 
 /* about */
-.about{
+.about {
     padding: 50px;
     margin-top: 10px;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
     /* background: rgba(249, 199, 199, 0.853); */
-    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(../images/aboutbackground.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(../images/aboutbackground.jpg);
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     border-radius: 10px;
-    
+
 }
+
 .herocontainer {
     display: flex;
-    justify-content: space-between; /* Giúp tạo khoảng cách giữa các phần tử */
-    gap: 10px; /* Khoảng cách giữa 2 hero */
+    justify-content: space-between;
+    /* Giúp tạo khoảng cách giữa các phần tử */
+    gap: 10px;
+    /* Khoảng cách giữa 2 hero */
     margin-top: 20px;
     border-radius: 15px;
-  }
-  
-  .hero-image {
+}
 
+.hero-image {
     height: 50vh;
-    width: 50%; /* Chia không gian để 2 hero có thể vừa nhau trên 1 hàng */
+    width: 50%;
+    /* Chia không gian để 2 hero có thể vừa nhau trên 1 hàng */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     border-radius: 15px;
-  }
-  .hero2{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/india.jpg");
-  }
-  .hero1{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/vietnam.jpg");
-  }
-  .hero-text {
+}
+
+.hero1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/book.jpg");
+}
+
+.hero2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/china.jpg");
+}
+
+.hero-text {
     text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-  }
-  
-  .hero-text button {
-    border-radius:20px ;
+}
+
+.hero-text button {
+    border-radius: 20px;
     outline: 0;
     display: inline-block;
     padding: 10px 25px;
-    
+
     background-color: #ff5254;
     text-align: center;
     cursor: pointer;
 
-  }
+}
 
-  .hero-text button a{
+.hero-text button a {
     text-decoration: none;
     color: white;
 
-  }
-  
-  .hero-text button:hover {
+}
+
+.hero-text button:hover {
     background-color: #ff0000;
     color: white;
-  }
+}
+
 /* .about .card{
     border-radius: 10px;
 } */
@@ -556,29 +598,33 @@ margin-right: -10px;
     
     border-radius: 10px;
 } */
-.about hr{
+.about hr {
     width: 50%;
     margin: 20px auto;
-    
+
     border: 3px solid #ffffff;
 
 }
-.about h1{
+
+.about h1 {
     font-weight: 600;
     color: white;
 
 }
-.about h2{
+
+.about h2 {
     font-weight: 600;
     letter-spacing: 1px;
-    color:#fbfbfb;
+    color: #fbfbfb;
 }
-.about p{
+
+.about p {
     font-weight: 500;
     color: white;
     font-size: 20px;
 }
-#about-btn{
+
+#about-btn {
     width: 150px;
     height: 38px;
     border: none;
@@ -590,11 +636,13 @@ margin-right: -10px;
     transition: 0.5s ease;
     cursor: pointer;
 }
-#about-btn a{
+
+#about-btn a {
     text-decoration: none;
     color: white;
 }
-#about-btn:hover{
+
+#about-btn:hover {
     width: 170px;
     background-color: #ff1414;
 }
@@ -629,23 +677,25 @@ margin-right: -10px;
     margin-bottom: 10px;
     transition: 0.5s ease;
     cursor: pointer;
-    
+
 }
+
 .footer-content .quick-link a {
     padding: 10px;
     border-radius: 5px;
     font-size: 20px;
     /* background: black;*/
-    color: black; 
+    color: black;
     margin-left: 10px;
     margin-bottom: 10px;
     transition: 0.5s ease;
     cursor: pointer;
     text-decoration: none;
-    
+
 }
-.footer-content .quick-link a:hover{
-    color:#F70409;
+
+.footer-content .quick-link a:hover {
+    color: #F70409;
 }
 
 .footer-content .social-links i:hover {
@@ -657,15 +707,16 @@ margin-right: -10px;
     border-radius: 5px;
     font-size: 20px;
     /* background: black;*/
-    color: black; 
+    color: black;
     margin-left: 10px;
     margin-bottom: 10px;
     transition: 0.5s ease;
     cursor: pointer;
     text-decoration: none;
-    
+
 }
-.footer-content .branch a:hover{
+
+.footer-content .branch a:hover {
     color: #F70409;
 }
 
@@ -763,12 +814,13 @@ margin-right: -10px;
     color: #F70409;
 }
 
-.contact{
+.contact {
     background: #DFEFF1;
     padding: 50px;
     margin-top: 15px;
 }
-.contact form input{
+
+.contact form input {
     padding: 10px;
     color: black;
     border: none;
@@ -778,7 +830,7 @@ margin-right: -10px;
     box-shadow: 0px 5px 5px -5px black;
 }
 
-.contact form textarea{
+.contact form textarea {
     border: none;
     border-radius: 10px;
     resize: none;
@@ -786,7 +838,7 @@ margin-right: -10px;
     height: 150px;
 }
 
-.contact .submit{
+.contact .submit {
     width: 160px;
     font-size: 16px;
     font-weight: 550;
@@ -795,7 +847,8 @@ margin-right: -10px;
     margin-top: 10px;
     transition: 0.5s;
 }
-.contact .submit:hover{
+
+.contact .submit:hover {
     background: rgb(255, 76, 40);
 }
 
@@ -805,31 +858,36 @@ margin-right: -10px;
     width: 100%;
     margin-bottom: 15px;
 }
+
 .main-image {
-    width: 100%; 
+    width: 100%;
     object-fit: cover;
 }
 
 /* Thumbnails */
 .tour-thumbnails img {
-    width: 32%; /* Adjust thumbnail size to make them fit evenly */
+    width: 32%;
+    /* Adjust thumbnail size to make them fit evenly */
     height: auto;
     object-fit: cover;
     margin-right: 5px;
 }
+
 .tour-details {
-    background-color: #ffffff; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding-top: 100px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; 
+    justify-content: space-between;
     height: 100%;
 }
+
 .row.align-items-center {
     display: flex;
-    align-items: center; /* Aligns image and text details on the same line */
-    }
+    align-items: center;
+    /* Aligns image and text details on the same line */
+}
 
 
 /* bookdetail */
